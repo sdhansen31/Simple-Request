@@ -10,9 +10,9 @@
      ports:
        - "5000:5000"
    ui:
-     build: ../self-registration
+     build: ../simple-selection
      volumes:
-       - ../self-registration:/usr/src/app
+       - ../simple-selection:/usr/src/app
        - /usr/src/app/node_modules
      ports:
        - "9080:8080"
@@ -28,3 +28,4 @@
        - ui
    redis:
      image: "redis:alpine"
+
